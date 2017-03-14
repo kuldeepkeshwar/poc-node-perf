@@ -1,20 +1,11 @@
 {
   "apps" : [{
     "script"    : "index.js",
-    "instances" : 4,
+    "instances" : 8,
+    "node_args" : ["--nouse-idle-notification","--expose-gc","--max-old-space-size=400"],
     "exec_mode" : "cluster",
     "env": {
-      "NODE_ENV": "development"
-    },
-    "env_production" : {
-       "NODE_ENV": "production"
-    }
-  },{
-    "script"    : "test-server.js",
-    "instances" : 1,
-    "exec_mode" : "cluster",
-    "env": {
-      "NODE_ENV": "development"
+      "NODE_ENV": "production"
     },
     "env_production" : {
        "NODE_ENV": "production"

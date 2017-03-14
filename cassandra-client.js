@@ -4,7 +4,7 @@ const options = {
    contactPoints: ['127.0.0.1'],keyspace: 'test',
    pooling: {
       coreConnectionsPerHost: {
-        [distance.local] : 1000,
+        [distance.local] : 100000,
         [distance.remote] : 1
       } 
    }

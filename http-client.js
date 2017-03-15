@@ -1,5 +1,5 @@
 const request= require('request');
 module.exports=request.defaults({
     forever: true,
-    pool: {maxSockets: 1650000}
+    pool: {maxSockets: 10000000}
 });

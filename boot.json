@@ -2,7 +2,7 @@
   "apps" : [{
     "script"    : "index.js",
     "instances" : 8,
-    "node_args" : ["--nouse-idle-notification","--expose-gc","--max-old-space-size=400"],
+    "node_args" : ["--nouse-idle-notification","--expose-gc","--max-old-space-size=200"],
     "exec_mode" : "cluster",
     "env": {
       "NODE_ENV": "production"
